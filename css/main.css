@@ -6,8 +6,6 @@ body {
     height: 100%;
     margin: 0;
 }
-a {color:white}
-a:hover {text-decoration: none;}
 
 .container {
     margin: 0 auto;
@@ -39,24 +37,25 @@ p span {
     font-weight: bold  
 }
 .action {
-    margin: 36px 0;
+    margin: 42px 0;
 }
 .whatsapp-button {
     padding: 16px 32px;
-    background-color: white;
-    color: black;
+    background-color: rgb(71, 121, 192);
+    color: white;
     border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
     border: none;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     font-weight: 700;
-    vertical-align: middle;
     text-decoration: none;
 }
 
 .whatsapp-button:after {
-    content: "";
+    content: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -68,7 +67,7 @@ p span {
 }
 
 .whatsapp-button:hover {
-    background-color: #f0f0f0; /* Cambio de color de fondo al pasar el ratón por encima */
+    background-color: rgb(41, 86, 150); /* Cambio de color de fondo al pasar el ratón por encima */
 }
 /* Animations */
 h1, p, .nav, .logo, .author {
@@ -83,7 +82,6 @@ h1, p, .nav, .logo, .author {
 .imageBg {
     top: 0;
     left: 0; 
-    background-color: #000000;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
