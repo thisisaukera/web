@@ -1,0 +1,78 @@
+:root {
+    --bar-size: 0%; 
+}
+body {
+    font-family: 'Raleway';
+    height: 100%;
+    margin: 0;
+}
+a {color:white}
+a:hover {text-decoration: none;}
+
+.container {
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main {
+    margin-top: 200px;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+}
+h1 {
+    margin: 1em 8px 0 20px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    color: #fff;
+    font-size: 22px;
+    line-height: 150%;  
+}
+p {
+    margin: 16px 8px 0 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 150%;  
+}
+p span {
+    font-weight: bold  
+}
+/* Animations */
+h1, p, .nav, .logo, .author {
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes text {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+.imageBg {
+    top: 0;
+    left: 0; 
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    animation-name: text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.imageBg {   
+    background: url(https://picsum.photos/2290/1630) no-repeat center center fixed; 
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/2290/1630', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://picsum.photos/2290/1630?grayscale', sizingMethod='scale')";
+}
+.layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #000000 33.85%, rgba(63, 55, 201, 0) 100%);
+    opacity: 0.8;
+    z-index: -2;
+}
