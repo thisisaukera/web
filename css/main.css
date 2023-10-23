@@ -68,6 +68,16 @@ p span {
 .whatsapp-button:hover {
     background-color: rgb(205, 204, 204); /* Cambio de color de fondo al pasar el ratón por encima */
 }
+.tip {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+.hint {
+    font-size: 10px;
+    color: rgb(235, 235, 235);
+    
+}
 /* Animations */
 h1, p, .nav, .logo, .author {
     animation-name: text;
